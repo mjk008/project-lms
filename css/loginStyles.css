@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sanchez');
 
 body{
-    background-image: url('../assets/img/back.png');
+    background-image: url('../assets/backgrounds/back.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
