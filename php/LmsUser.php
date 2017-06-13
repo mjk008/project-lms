@@ -15,10 +15,10 @@
     class GeneralUser
     {
         /**
-         * @var String $username, @var $name, @var $dob, @var $email are private properties. Thus increasing security of the 
+         * @var String $username, @var $name, @var $dob, @var $email, @var $Contact_No are private properties. Thus increasing security of the 
          * program and increasing the accuracy of the data that is finally entered to the database.
         */
-        private $username, $name, $dob, $email;
+        private $username, $name, $dob, $email, $Contact_No;
 
         /**
          * @var String $indexNumber and @var String $password are declared as protected properties to protect it from any
@@ -50,6 +50,11 @@
         public function setEmail($input)
         {
             $this->email = $input;
+        }
+        
+        public function Contact_No($input)
+        {
+            $this->Contact_No = $input;
         }
 
         private function setPassword($input)
@@ -96,6 +101,11 @@
         public function getEmail()
         {
             return $this->email;
+        }
+        
+        public function getContact_No()
+        {
+            return $this->Contact_No;
         }
 
         private function getIndexNumber()
