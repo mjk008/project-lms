@@ -18,7 +18,7 @@
          * @var String $username, @var $name, @var $dob, @var $email, @var $Contact_No are private properties. Thus increasing security of the 
          * program and increasing the accuracy of the data that is finally entered to the database.
         */
-        private $username, $name, $dob, $email, $Contact_No;
+        private $username, $name, $dob, $email, $contactNo;
 
         /**
          * @var String $indexNumber and @var String $password are declared as protected properties to protect it from any
@@ -52,9 +52,9 @@
             $this->email = $input;
         }
         
-        public function Contact_No($input)
+        public function setContactNumber($input)
         {
-            $this->Contact_No = $input;
+            $this->contactNumber = $input;
         }
 
         private function setPassword($input)
@@ -103,9 +103,9 @@
             return $this->email;
         }
         
-        public function getContact_No()
+        public function getContactNumber()
         {
-            return $this->Contact_No;
+            return $this->contactNumber;
         }
 
         private function getIndexNumber()
