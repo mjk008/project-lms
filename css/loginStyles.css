@@ -1,11 +1,127 @@
+/*Designed and coded by Udam Liyanage for Mind Labs.*/
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
 @import url('https://fonts.googleapis.com/css?family=Bubbler+One');
-@import url('https://fonts.googleapis.com/css?family=Lora:700');
-@import url('https://fonts.googleapis.com/css?family=Sanchez');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body{
-    background-image: url('../assets/backgrounds/back.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.logo{
+    height: 200px;
+    width: 400px;
+    background-color: #ffffe6;
+    display: block;   
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+/*Alternative to centering elements
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+*/
+
+.heading-intro h3{
+    font-family: 'Pangolin', cursive;
+    font-size: 38px;
+    color: #000000;
+    letter-spacing: 5px;
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-container{
+    height: 350px;
+    width: 700px;
+    background-color: #e0e0eb;
+    border-radius: 15px 50px 30px;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-container .login-form input{
+    display: block;
+    height: 40px;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: #e0e0eb;
+    border-radius: 5px;
+    border-color: black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.form-container .login-form .login-button{
+    display: block;
+    border-radius: 12px;
+    height: 50px;
+    width: 620px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    border-color: #000000;
+    background-color:  #8585ad;
+    opacity: 0.75;
+}
+
+.form-container .login-form .login-button .button-text{
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.form-container .login-form .form-intro{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.form-container .login-form .form-intro a{
+    text-decoration: none;
+    color: #000000;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000000;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 1;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000000;
+   font-family: 'Slabo 27px', serif;
+   font-weight: bold;   
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000000;
+   font-family: 'Slabo 27px', serif;
+   font-weight: bold;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000000;
+   font-family: 'Slabo 27px', serif;
+   font-weight: bold;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #000000;
+   font-family: 'Slabo 27px', serif;
+   font-weight: bold;
 }
 
 .footer{
@@ -20,23 +136,17 @@ body{
     font-weight: bold;
 }
 
-.heading{
-    position: static;
-    height: 150px;
-    width: 400px;
-    background-color: #ffffff;
-    float: center;
-}
-
-.heading h3{
-    font-family: 'Sanchez', serif;
-    font-size: 30px;
-}
-
 .footer .heart{
     color: #ff0000;
 }
 
+
+/*background-image css
+body{
+    background-image: url('../assets/backgrounds/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
 
 
 
