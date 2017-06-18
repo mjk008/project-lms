@@ -2,19 +2,29 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LMS - Login</title>
-        <link rel="stylesheet" href="css\loginStyles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LMS Login Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/loginStyles.css">
+        <script type="text/javascript" src="js/loginPage.js"></script>
     </head>
     <body>
-        <div class="heading">
-             <h3>Heading goes here</h3>
+        <div class="logo">
+            <!-- img Tag here --><p>Logo Goes Here</p>
         </div>
-        <div class="container">
-            <!-- Form Elements -->
+        <div class="heading-intro">
+            <h3>Log into your online learning portal</h3>
         </div>
-        <div class="footer"> 
-            <p>Made with <span class="heart">❤</span>. By Mind Labs©</p> <!--The font should be made smaller when the proper background-image is set -->
+        <div class="form-container">
+            <form name="login-form" method="POST" class="login-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button class="login-button"><span class="button-text">Login</span></button>
+                <p class="form-intro">Need help logging in? Click <a href="#forgotPassword">here</a></p>
+                <p class="form-intro">Don't have a LMS account? Signup <a href="#signUp">here</a></p>
+        </div>
+        <div class="footer">
+            <p>Made with <span class="heart">❤</span> by Mind Labs</p>
         </div>
     </body>
 </html>
