@@ -56,7 +56,10 @@
     margin-left: 5%;
     background-color: #e0e0eb;
     border-radius: 5px;
-    border-color: black;
+    border: 2px solid #000000;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: bold;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 }
@@ -139,14 +142,5 @@
 .footer .heart{
     color: #ff0000;
 }
-
-
-/*background-image css
-body{
-    background-image: url('../assets/backgrounds/back.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
-
 
 
