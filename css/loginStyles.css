@@ -1,13 +1,13 @@
 /*Designed and coded by Udam Liyanage for Mind Labs.*/
-@import url('https://fonts.googleapis.com/css?family=Pangolin');
 @import url('https://fonts.googleapis.com/css?family=Bubbler+One');
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 .logo{
     height: 200px;
     width: 400px;
-    background-color: #ffffe6;
+    /*background-color: #ffffe6;*/
     display: block;   
     position: absolute;
     top: 15%;
@@ -22,13 +22,13 @@
 */
 
 .heading-intro h3{
-    font-family: 'Pangolin', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-size: 38px;
     color: #000000;
     letter-spacing: 5px;
     display: block;
     position: absolute;
-    top: 28%;
+    top: 20%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -37,9 +37,8 @@
 .form-container{
     height: 350px;
     width: 700px;
-    background-color: #e0e0eb;
     border-radius: 15px 50px 30px;
-    opacity: 1;
+	background-color: rgba(224, 224, 235, 0.5);
     display: block;
     position: absolute;
     top: 58%;
