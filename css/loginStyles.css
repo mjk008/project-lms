@@ -1,25 +1,35 @@
 /*Designed and coded by Udam Liyanage for Mind Labs.*/
-@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+/*Code contributed by Ravishka Wickramasinghe*/
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
+body{
+    background-image: url(""); /*Add Proper Background Image*/
+    background-repeat: no-repeat;
+}
+
 .logo{
     height: 200px;
     width: 400px;
-    /*background-color: #ffffe6;*/
     display: block;   
     position: absolute;
     top: 15%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
 }
 /*Alternative to centering elements
     display: block;
     margin-left: auto;
     margin-right: auto;
 */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 .heading-intro h3{
     font-family: 'Abril Fatface', cursive;
@@ -32,6 +42,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    margin-top: 5%;
 }
 
 .form-container{
@@ -41,7 +52,7 @@
 	background-color: rgba(224, 224, 235, 0.5);
     display: block;
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -126,20 +137,10 @@
    font-weight: bold;
 }
 
-.footer{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
 
-.footer p{
-    font-family: 'Bubbler One', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-}
 
-.footer .heart{
-    color: #ff0000;
-}
+
+
+
 
 
