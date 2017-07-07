@@ -1,0 +1,27 @@
+/*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+
+.footer-container{
+    height: 20px;
+    width: 25px;
+    margin-left: 3px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.footer p{
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer i{
+    color: #ff0000;
+    font-size: 20px;
+}
