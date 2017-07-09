@@ -1,5 +1,7 @@
 /*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
 
+/*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
+
 $(document).ready(function(){
     function quoteFade(){
         $.each($quoteList, function(idx, elem) {
@@ -74,7 +76,8 @@ $(document).ready(function(){
     $("input").focus(function(){
         $(this).css({
             "background-color" : "#4CAF50", 
-            "color":"#ffffff"
+            "color":"#ffffff",
+            "font-weight" : "bold"
         });
     });
 
@@ -85,4 +88,6 @@ $(document).ready(function(){
         });
     });
 });
+
+
 
