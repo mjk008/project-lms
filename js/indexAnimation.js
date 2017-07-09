@@ -1,5 +1,7 @@
 /*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
 
+/*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
+
 $(document).ready(function(){
     function quoteFade(){
         $.each($quoteList, function(idx, elem) {
@@ -32,16 +34,15 @@ $(document).ready(function(){
     $('#quote').text("");
     $('#author').text("");
 
-    $(".header").animate({'opacity':'0'}, 0);
     $(".footer").animate({'opacity':'0'}, 0);
     $(".contribute").animate({'opacity':'0'}, 0);
-    $(".header").animate({'opacity':'1', 'marginTop':'-=150px'}, 5000);
-    $(".header").animate({'marginTop':'+=20px'}, 2500, function(){quoteFade()});
+
+    quoteFade();
 
     setTimeout(function(){
          $('.contribute').animate({'opacity':'1'}, 2000);
          $('.footer').animate({'opacity':'1'}, 2000);
-    }, 12000);
+    }, 5000);
 
     $('.contribute').mouseenter(function(){
         $('a').css({"text-decoration":"underline", "fontWeight":"bold"});
@@ -50,5 +51,40 @@ $(document).ready(function(){
     $('.contribute').mouseleave(function(){
         $('a').css({"text-decoration":"none", "fontWeight":"normal"});
     });
-       
+
+    //Form Animation
+
+    $(".exitButton").click(function(){
+        $(".overlay-container").css("display", "none");
+        $(".body-container").foggy(false);
+    });
+
+    $(".next-button").click(function(){
+        alert("Next Button Clicked");
+    });
+
+    $("#loginButton").click(function(){
+        $(".footer").css("display", "none");
+        $(".overlay-container").css("display", "block");
+        $(".body-container").foggy({
+            blurRadius: 8,          // In pixels.
+            opacity: 0.8,           // Falls back to a filter for IE.
+            cssFilterSupport: true
+        });
+    });
+
+    $("input").focus(function(){
+        $(this).css({
+            "background-color" : "#4CAF50", 
+            "color":"#ffffff"
+        });
+    });
+
+    $("input").blur(function(){
+        $(this).css({
+            "background-color" : "#ffffff", 
+            "color" : "#000000"
+        });
+    });
 });
+
