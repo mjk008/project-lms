@@ -87,19 +87,6 @@
             else
                 return 0;
         }
-
-        public function validatePassword()
-        {
-            if(lengthCheck(25, 5)) //In range of 5 and 25
-                if(!checkWhitespace()) //Does not contain whitespaces
-                    if(typeCheckAlnum()) //Contain alphanumeric characters
-                    {
-                        if(preg_match('^([a-zA-Z0-9@*#?_()<>])+$/', $checkVal))
-                            return 1;
-                        else   
-                            return 0;
-                    }
-        }
     }
 
 ?>
