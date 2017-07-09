@@ -1,7 +1,5 @@
 /*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
 
-/*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
-
 $(document).ready(function(){
     function quoteFade(){
         $.each($quoteList, function(idx, elem) {
