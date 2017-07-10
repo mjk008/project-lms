@@ -21,12 +21,12 @@
 
         public function setInput($input)
         {
-            $this->$checkVal = $input;
+            $this->checkVal = $input;
         }
 
         public function lengthCheck($max, $min)
         {
-            if(strlen($checkVal) > $max || strlen($checkVal) < $min)    
+            if(strlen($this->checkVal) > $max || strlen($this->checkVal) < $min)    
                 return 0; //Not in range
             else
                 return 1;
@@ -34,7 +34,7 @@
 
         public function typeCheckAlpha()
         {
-            if(ctype_alpha($checkVal))
+            if(ctype_alpha($this->checkVal))
                 return 1; //All alphabetic characters
             else
                 return 0;
@@ -42,7 +42,7 @@
 
         public function typeCheckNumeric()
         {
-            if(ctype_digit($checkVal))
+            if(ctype_digit($this->checkVal))
                 return 1; //All numeric characters
             else
                 return 0;
@@ -50,7 +50,7 @@
 
         public function typeCheckAlnum()
         {
-            if(ctype_alnum($checkVal))
+            if(ctype_alnum($this->checkVal))
                 return 1; //Alphanumeric Characters
             else
                 return 0;
@@ -58,7 +58,7 @@
 
         public function typeCheckControl()
         {
-            if(ctype_cntrl($checkVal))
+            if(ctype_cntrl($this->checkVal))
                 return 1; //Contains control characters
             else
                 return 0;
@@ -66,7 +66,7 @@
 
         public function typeCheckLowerCase()
         {
-            if(ctype_lower($checkVal))
+            if(ctype_lower($this->checkVal))
                 return 1; //contains only lower case characters
             else
                 return 0;
@@ -74,7 +74,7 @@
 
         public function typeCheckUpperCase()
         {
-            if(ctype_upper($checkVal))
+            if(ctype_upper($this->checkVal))
                 return 1; //Contains only upper case letter
             else
                 return 0;
@@ -82,7 +82,7 @@
 
         public function checkWhitespace()
         {
-            if(preg_match('/\s/', $checkVal))
+            if(preg_match('/\s/', $this->checkVal))
                 return 1; //Contains whitespaces
             else
                 return 0;
