@@ -35,11 +35,11 @@
                 <span class="form-heading">Sign in</span>
                 <span class="form-intro">Please enter your username to continue to LMS</span>
                 <div class="form-container">
-                    <form>
+                    <form id="usernameForm">
                         <input class="form-input" type="text" id="uname" name="uname">
                     </form>
                     <button class="next-button">Next</button>
-                    <span class="error">Testing</span>
+                    <span class="error"></span>
                 </div>
             </div>
         </div>
