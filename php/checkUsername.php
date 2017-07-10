@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     include "inputCheck.php";
     include "connectToDatabase.php";
@@ -12,7 +13,11 @@
     $uname = $_POST['uname'];
     
     if(validateUsername($uname))
-        checkUsername($uname, $pw);
+    {
+        $_SESSION['username'] = $uname;
+        session_write_close();
+        checkUsername($uname);
+    }
 
     
     function validateUsername($uname)
@@ -46,33 +51,7 @@
             die("Username has to be in range 5-20");
     }
 
-    /*function validatePassword($pw)
-    {
-        $passwordChecker = new InputCheck;
-        $passwordChecker->setInput($pw);
-
-        if($passwordChecker->lengthCheck(25, 5)) //In range of 5 and 25
-        {
-                if(!$passwordChecker->checkWhitespace()) //Does not contain whitespaces
-                {
-                    if($passwordChecker->typeCheckAlnum()) //Contain alphanumeric characters
-                    {
-                        if(preg_match('/^([a-zA-Z0-9@#?_()<>])+$/', $pw))
-                            return 1;
-                        else   
-                            die("Password contains illegal characters.");
-                    }
-                    else
-                        die("Password has to contain alphanumeric characters");
-                }
-                else
-                    die("Password contains whitespace charactes");
-        }
-        else
-            die("Password must be in range 5-25");
-    }*/
-
-    function checkUsername($uname, $pw)
+    function checkUsername($uname)
     {
         $conn = connect();
         if(!$conn)
@@ -85,7 +64,7 @@
         $stmt->store_result();
 
         if($stmt->num_rows > 0)
-            return ("EXISTS");
+            die("EXISTS");
         else
             die("Username not registered");
     }
