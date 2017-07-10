@@ -3,8 +3,10 @@
     <head>
         <title> Home </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="landingPage.css">
-        <link rel="stylesheet" href="commonStyles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/footerAnimation.js"></script>
+        <link rel="stylesheet" href="css/landingPage.css">
+        <link rel="stylesheet" href="css/commonStyles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <head>
 
@@ -12,14 +14,20 @@
          <div class="common-header">
             <img src="assets/logo.jpg" height="100px" width="200px" >
             <p>Learning Management System</p>
-    </div>
-        <ul>
-            <li><a href="computing.html">  <b>SCHOOL OF COMPUTING</b></a></li>
-            <li><a href="business.html"> <b>SCHOOL OF BUSINESS</b></a></li>
-            <li><a href="engineering.html"> <b>SCHOOL OF ENGINEERING</b></a></li>
-        </ul>
+        </div>
+        <div class="jumbotron">
+            <div class="button-container">
+                <button class="button"><span class="button-text">School Of Business</span></button>
+            </div>
+            <div class="button-container">
+                <button class="button"><span class="button-text">School Of Computing</span></button>
+            </div>
+            <div class="button-container">
+                <button class="button"><span class="button-text">School Of Engineering</span></button>
+            </div>
+        </div>
         <div class="footer">
             <p>Made with <span class="footer-container"><i class="fa fa-heart" aria-hidden="true"></i></span>by Mind Labs</p>
-    </div>
+        </div>
     </body>
 </html>
