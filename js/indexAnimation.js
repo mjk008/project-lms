@@ -1,7 +1,5 @@
 /*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
 
-/*Designed and Coded by Udam Liyanage for Mind Labs. 2017*/
-
 $(document).ready(function(){
     function quoteFade(){
         $.each($quoteList, function(idx, elem) {
@@ -24,6 +22,17 @@ $(document).ready(function(){
             newEL.appendTo($author);
             newEL.delay(idx * 70);
             newEL.animate({opacity: 1}, 1100);
+        });
+    }
+
+    function sendAjaxRequest()
+    {
+        $(document).ajaxStart(function(){
+            $(".error").text("Please wait..");
+        });
+        $.post("php/checkUsername.php", $("#usernameForm").serialize(), function(data){
+            if(data == "EXISTS")
+                window.location.replace("loginPage.php");
         });
     }
 
@@ -60,7 +69,7 @@ $(document).ready(function(){
     });
 
     $(".next-button").click(function(){
-        alert("Next Button Clicked");
+        sendAjaxRequest();
     });
 
     $("#loginButton").click(function(){
